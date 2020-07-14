@@ -1,0 +1,14 @@
+version: 1.0
+
+input:
+  image: 'imgs/oto_vuong.jpg'
+
+model1:
+  name: 'wpod_net'
+  path: 'models/LicenseRecognition/wpod/wpod-net_update1.h5'
+
+model2:
+  name: 'ocr'
+  config: 'models/LicenseRecognition/ocr/ocr-net.cfg'
+  weight: 'models/LicenseRecognition/ocr/ocr-net.weights'
+  classes: 'models/LicenseRecognition/ocr/ocr-net.names'
